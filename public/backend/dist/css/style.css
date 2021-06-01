@@ -37,6 +37,31 @@
       to {top: 0; opacity: 0;}
 }
 
+.rzimg-wrap {
+    position: relative;
+    display: inline-block;
+}
+
+.rzimg-wrap .rzclose {
+    position: absolute;
+    top: 2px;
+    z-index: 100;
+    background-color: #EF0A0A;
+    padding: 5px 4px 5px;
+    color: #f3f0f0;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: .1;
+    text-align: center;
+    font-size: 22px;
+    line-height: 10px;
+    border-radius: 50%;
+}
+
+.rzimg-wrap:hover .rzclose {
+    opacity: 1;
+}
+
 .box-6a8d9d .box-header {
   background-color: #6a8d9d!important;
   color: white!important; 

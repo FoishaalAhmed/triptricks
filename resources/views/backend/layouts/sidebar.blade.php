@@ -47,6 +47,29 @@
 						</li>
 					</ul>
 				</li>
+				<li class="nav-item @if (request()->is('admin/tricks') || request()->is('admin/tricks/*')) {{ 'menu-open' }} @endif">
+					<a href="#" class="nav-link @if (request()->is('admin/tricks') || request()->is('admin/tricks/*')) {{ 'active' }} @endif">
+						<i class="nav-icon fas fa-file"></i>
+						<p>
+							{{__('Tricks')}}
+							<i class="fas fa-angle-left right"></i>
+						</p>
+					</a>
+					<ul class="nav nav-treeview">
+						<li class="nav-item">
+							<a href="{{ route('admin.tricks.create') }}" class="nav-link @if (request()->is('admin/tricks/create')) {{ 'active' }} @endif">
+								<i class="fas fa-plus-square nav-icon"></i>
+								<p>{{__('New Trick')}}</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="{{ route('admin.tricks.index') }}" class="nav-link @if (request()->is('admin/tricks')) {{ 'active' }} @endif">
+								<i class="fas fa-list-alt nav-icon"></i>
+								<p>{{__('Tricks')}}</p>
+							</a>
+						</li>
+					</ul>
+				</li>
 				<li class="nav-item @if (request()->is('admin/pages') || request()->is('admin/pages/*')) {{ 'menu-open' }} @endif">
 					<a href="#" class="nav-link @if (request()->is('admin/pages') || request()->is('admin/pages/*')) {{ 'active' }} @endif">
 						<i class="nav-icon fas fa-file"></i>
