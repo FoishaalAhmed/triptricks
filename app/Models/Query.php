@@ -25,7 +25,7 @@ class Query extends Model
         $destroyQuery = $query->delete();
 
         $destroyQuery
-        ? session()->flash('message', 'Query Deleted Successfully')
-        : session()->flash('message', 'Something Went Wrong') ;
+            ? session()->flash('message', 'Query Deleted Successfully')
+            : session()->flash('message', 'Something Went Wrong');
     }
 }

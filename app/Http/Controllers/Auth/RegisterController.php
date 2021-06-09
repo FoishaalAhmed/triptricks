@@ -66,7 +66,7 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        $role = Role::create(['name' => 'Admin']);
+        $role = Role::create(['name' => 'User']);
 
         $user =  User::create([
             'name' => $data['name'],
@@ -76,7 +76,7 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
         ]);
 
-        $role_r = Role::where('name', 'Admin')->first();
+        $role_r = Role::where('name', 'User')->first();
 
         $user->assignRole($role_r);
 

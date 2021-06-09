@@ -90,11 +90,9 @@
           	name: {
             	required: true,
             	maxlength: 255,
-				lettersonly: true
           	},
 		  	slug: {
 				required: true,
-				lettersonly: true,
 				maxlength: 355,
 		  	},
           	text: {

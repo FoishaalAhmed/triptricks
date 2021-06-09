@@ -1,0 +1,160 @@
+
+
+
+/* .d-block{
+  height: 250px;
+  width: 300px;
+}
+
+.hero-text img {
+  width: 150px;
+  height: 450px;
+  padding-top: 250px;
+  margin-left: -200px;
+}
+
+.hero-text2 h1 {
+  font-size: 15px;
+} */
+
+
+
+
+@media only screen and (max-width: 900px) {
+
+  *{
+    margin: 0px;
+    padding: 0px;
+    font-family: cursive;
+  }
+
+  #navbarText li {
+    text-align: right;
+  }
+
+  .banner1img img {
+    height: 200px;
+    width: 100%;
+  }
+
+  .bannertex {
+    margin-top: -150px;
+    padding-left: 150px;
+    padding-right: 10px;
+  }
+  
+  .bannertex h3 p {
+    text-align: justify;
+    font-size: 11px;
+  }
+
+  .banner1img  {
+    height: 200px;
+    width: 100%;
+  }
+
+  #starthead {
+    font-size: 15px;
+  }
+
+  .bookcard {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #book-img {
+    height: 200px;
+  }
+
+  .bookname {
+    padding: 5px; 
+    text-align: justify;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .bookcard li {
+    font-size: 15px
+  }
+
+  .footer-desktop img {
+    width: 100%;
+  }
+  
+  .footer-desktop p {
+    font-size: 11px;
+  }
+
+  .Quick-Links {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .mdmd2 {
+    font-size: 11px;
+  }
+
+  .Contact-Us {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .footer-mdmd {
+    font-size: 11px;
+    margin-top: -43px;
+    margin-bottom: 20px;
+  }
+
+  .endline {
+    font-size: 12px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .signpg {
+    width: 100%;
+  margin: auto;
+  }
+
+  #secondpage {
+    margin: 0px;
+    width: 100%;
+  }
+
+  #secondpageheading {
+    font-size: 20px;
+  }
+
+  .carousel-inner img{
+    height: 250px;
+  }
+
+  .secondpagecard {
+    margin-top: 25px;
+  }
+
+  .tourdtl li{
+    font-size: 12px;
+    text-align: justify;
+  }
+
+  .tourdtl {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .aboutus-text {
+    font-size: 12px;
+    text-align: justify;
+  }
+
+  .contact-form form{
+    padding: 0%;
+  }
+
+
+  
+
+}

@@ -1,0 +1,166 @@
+
+body{
+  background-color: #e91e1e;
+}
+
+#navbarText li {
+  padding-left: 20px;
+}
+
+.nav-link {
+  color: black;
+  margin-top: 7px;
+}
+
+
+.banner1img img {
+  height: 450px;
+  width: 100%;
+}
+.banner1img  {
+  height: 450px;
+  width: 100%;
+}
+
+.bannertex {
+  margin-top: -350px;
+  padding-left: 100px;
+}
+
+.bannertex h3 p {
+  text-align: justify;
+  font-size: 20px;
+}
+
+.carousel-inner img{
+  height: 400px;
+}
+
+#secondpage {
+  width: 75%;
+}
+
+.tourdtl {
+  padding-left: 50px;
+}
+.tourdtl li{
+  font-size: 18px;
+}
+
+#book-img {
+  height: 350px;
+}
+
+.bookcard {
+  width: 75%;
+}
+
+.bookname {
+  padding: 25px; 
+  text-align: justify;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.bookcard li {
+  font-size: 21px
+}
+
+.readmorebtn {
+  text-align: right;
+  padding: 20px;
+}
+
+.Quick-Links {
+  color: white; font-size: 20px; font-weight: bold;
+}
+
+.footer-mdmd {
+  font-weight: 800;
+   color: whitesmoke;
+}
+
+
+.Contact-Us {
+  color: white; font-size: 20px; font-weight: bold;
+}
+
+
+.signpg {
+  width: 500px;
+  margin: auto;
+}
+
+
+.aboutusimg {
+  text-align: center;
+  margin: auto;
+}
+
+.aboutusimg img {
+  height: 150px;
+}
+
+
+.aboutus-text {
+  font-size: 20px;
+  text-align: justify;
+}
+
+
+
+
+
+
+/***** Contact Us ****/
+
+.contact-form{
+  background: #fff;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  width: 70%;
+}
+.contact-form .form-control{
+  border-radius:1rem;
+}
+.contact-image{
+  text-align: center;
+}
+.contact-image img{
+  border-radius: 6rem;
+  width: 11%;
+  margin-top: -3%;
+  transform: rotate(29deg);
+}
+.contact-form form{
+  padding: 14%;
+}
+.contact-form form .row{
+  margin-bottom: -7%;
+}
+.contact-form h3{
+  margin-bottom: 8%;
+  margin-top: -10%;
+  text-align: center;
+  color: #0062cc;
+}
+.contact-form .btnContact {
+  width: 50%;
+  border: none;
+  border-radius: 1rem;
+  padding: 1.5%;
+  background: orange;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+.btnContactSubmit
+{
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  color: #fff;
+  background-color: #0062cc;
+  border: none;
+  cursor: pointer;
+}
