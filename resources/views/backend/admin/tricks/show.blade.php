@@ -67,8 +67,8 @@
                                             <div class="col-md-12">
                                                 <label>{{ __('Foreign Price') }}</label>
                                                 <input type="number" name="foreign_price" class="form-control"
-                                                    placeholder="{{ __('Foreign Price') }}" required="" autocomplete="off"
-                                                    value="{{ $trick->foreign_price }}" />
+                                                    placeholder="{{ __('Foreign Price') }}" required=""
+                                                    autocomplete="off" value="{{ $trick->foreign_price }}" />
                                             </div>
                                         </div>
                                         <!-- /.form-group -->
@@ -78,7 +78,8 @@
                                         <div class="form-group">
                                             <div class="col-md-12">
                                                 <label>{{ __('Content') }}</label>
-                                                <textarea id="summernote" name="content">{{ $trick->content }} </textarea>
+                                                <textarea id="summernote"
+                                                    name="content">{{ $trick->content }} </textarea>
                                             </div>
                                         </div>
                                         <!-- /.form-group -->
@@ -93,8 +94,9 @@
                                     </div>
                                     <div class="card-body box-profile">
                                         <div class="text-center">
-                                            <img class="profile-user-img img-fluid img-circle" src="{{ asset($trick->display) }}"
-                                                alt="User profile picture" id="userPhoto">
+                                            <img class="profile-user-img img-fluid img-circle"
+                                                src="{{ asset($trick->display) }}" alt="User profile picture"
+                                                id="userPhoto">
 
                                         </div>
                                         <br>
@@ -123,23 +125,30 @@
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
-					<div class="row">
-						<iframe src="{{asset($trick->file) }}" style="width:100%; height:400px;" frameborder="0"></iframe>
-	
-					</div>
-					<div class="row">
-						@foreach ($photos as $key => $value)
-							<div class="col-md-3">
-								<div class="form-group rzimg-wrap" id="to_be_hide_{{$value->id}}" style="margin-bottom: 5px;">
-									<div class="col-md-12">
-										<label for=""></label>
-										<span class="rzclose" onclick="deleteThisImage({{$value->id}});" style="margin-top: 20px;">x</span>
-										<img src="{{asset($value->photo)}}" alt="" style="width: 100%" height="180px;">
-									</div>
-								</div>
-							</div>
-						@endforeach
-					</div>
+                    <div class="row">
+
+                        <a href="http://docs.google.com/gview?url={{ asset($trick->file) }}&embedded=true"
+                            class="btn btn-lg btn-teal" target="_blank"> View PDF </a>
+
+                        {{-- <iframe src="http://docs.google.com/gview?url={{ asset($trick->file) }}&embedded=true"
+                            style="width:600px; height:500px;" frameborder="0">
+                        </iframe> --}}
+                    </div>
+                    <div class="row">
+                        @foreach ($photos as $key => $value)
+                            <div class="col-md-3">
+                                <div class="form-group rzimg-wrap" id="to_be_hide_{{ $value->id }}"
+                                    style="margin-bottom: 5px;">
+                                    <div class="col-md-12">
+                                        <label for=""></label>
+                                        <span class="rzclose" onclick="deleteThisImage({{ $value->id }});"
+                                            style="margin-top: 20px;">x</span>
+                                        <img src="{{ asset($value->photo) }}" alt="" style="width: 100%" height="180px;">
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
                 </div>
                 <!-- /.card-body -->
             </div>
@@ -156,6 +165,5 @@
             // Summernote
             $('#summernote').summernote();
         })
-
     </script>
 @endsection

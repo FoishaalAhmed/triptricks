@@ -168,9 +168,11 @@
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
+
 					<div class="row">
-						<iframe src="{{asset($trick->file) }}" style="width:100%; height:400px;" frameborder="0"></iframe>
-	
+                        <object width="100%" height="500px" type="application/pdf" 
+                        data="{{asset($trick->file) }}#toolbar=0" id="pdf_content"></object>
+                        {{-- <embed src="{{asset($trick->file) }}#toolbar=0&navpanes=0&scrollbar=0" width="500" height="500"> --}}
 					</div>
 					<div class="row">
 						@foreach ($photos as $key => $value)
